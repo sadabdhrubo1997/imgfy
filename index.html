@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="p-10">
+    <div class="rounded-lg bg-gray-100 p-10">
+        <div class="flex gap-10"><input type="file" id="file-input">
+            <label class="flex flex-col">
+                <span>Quality</span>
+                <input type="range" value="50" id="quality-input">
+            </label>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <div id="uploaded-image" class="flex flex-col gap-4">
+                <div id="original-size">Original Size : <span></span></div>
+                <img class="w-full h-full object-contain">
+                <div class="loader1">Loading...</div>
+            </div>
+            <div id="compressed-image" class="flex flex-col gap-4">
+                <div id="compressed-size">Compressed Size : <span></span></div>
+                <img class="w-full h-full object-contain">
+                <div class="loader2">Loading...</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js" />
+</body>
+
+</html>
